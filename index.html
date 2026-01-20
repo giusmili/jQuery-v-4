@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Jquery - version 4.0</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json" src="schema.json"></script>
+</head>
+<body id="top">
+    <div class="bg-orb bg-orb--left" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--right" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <span class="brand__mark">jQ</span>
+                <div>
+                    <p class="brand__name">jQuery</p>
+                    <p class="brand__meta">Presentation 4.0</p>
+                </div>
+            </div>
+            <nav class="site-nav">
+                <a href="#vision">Vision</a>
+                <a href="#nouveautes">Nouveautes</a>
+                <a href="#ecosysteme">Ecosysteme</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Langage + bibliotheque</p>
+                    <h1>jQuery 4.0, un langage du DOM qui reste precis, leger, et pret pour l'avenir.</h1>
+                    <p class="hero__lead">
+                        La nouvelle version mise sur la performance, une API resserree et un
+                        ecosysteme mieux aligne avec le Web moderne. Toujours simple a lire,
+                        plus rapide a executer, plus clair a maintenir.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#nouveautes">Decouvrir les nouveautes</a>
+                        <a class="btn btn--ghost" href="#vision">Pourquoi jQuery ?</a>
+                    </div>
+                </div>
+                <div class="hero__panel reveal">
+                    <div class="code-card">
+                        <div class="code-card__header">
+                            <span>App.js</span>
+                            <span class="pill">4.0</span>
+                        </div>
+                        <pre><code>$(".carte")
+  .addClass("focus")
+  .animate({ opacity: 1, top: 0 }, 240)
+  .on("click", () =&gt; {
+    $(".details").fadeIn(160);
+  });</code></pre>
+                    </div>
+                    <div class="metrics">
+                        <div>
+                            <p class="metric__label">Temps de reponse</p>
+                            <p class="metric__value">-35%</p>
+                        </div>
+                        <div>
+                            <p class="metric__label">Poids moyen</p>
+                            <p class="metric__value">24KB</p>
+                        </div>
+                        <div>
+                            <p class="metric__label">Compatibilite</p>
+                            <p class="metric__value">Evergreen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="section section--light reveal">
+            <div class="container">
+                <div class="section__header">
+                    <p class="eyebrow">Vision</p>
+                    <h2>Un langage d'interface qui privilegie la clarte.</h2>
+                    <p>
+                        jQuery reste une maniere elegante d'exprimer des intentions UI. La version
+                        4.0 met l'accent sur des comportements previsibles, une maintenance plus simple
+                        et une integration nette dans les stacks modernes.
+                    </p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <h3>API recentree</h3>
+                        <p>Moins de surface, plus de stabilite : les methodes essentielles, bien documentees.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Performance maitrisee</h3>
+                        <p>Animations fluides, selecteurs rapides, et interactions qui repondent immediatement.</p>
+                    </article>
+                    <article class="card">
+                        <h3>DX moderne</h3>
+                        <p>Interoperable avec les modules, pret pour les bundlers et les workflows actuels.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="nouveautes" class="section reveal">
+            <div class="container">
+                <div class="section__header">
+                    <p class="eyebrow">Nouveautes</p>
+                    <h2>Ce qui change en 4.0.</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <p class="timeline__title">Selecteurs plus rapides</p>
+                        <p>Cache intelligent et meilleures strategies de traversee du DOM.</p>
+                    </div>
+                    <div class="timeline__item">
+                        <p class="timeline__title">Animation simplifiee</p>
+                        <p>Courbes plus naturelles et reglages plus lisibles dans les transitions.</p>
+                    </div>
+                    <div class="timeline__item">
+                        <p class="timeline__title">Compatibilite moderne</p>
+                        <p>Focus sur les navigateurs evergreen et une base de code allegee.</p>
+                    </div>
+                    <div class="timeline__item">
+                        <p class="timeline__title">Observabilite</p>
+                        <p>Hooks pour mesurer le timing, les interactions et la performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosysteme" class="section section--light reveal">
+            <div class="container callout">
+                <div>
+                    <p class="eyebrow">Ecosysteme</p>
+                    <h2>Un socle fiable pour les interfaces metier.</h2>
+                    <p>
+                        jQuery 4.0 reste un choix solide pour les dashboards, les outils internes
+                        et les experiences riches qui demandent un comportement coherent sur
+                        le long terme.
+                    </p>
+                </div>
+                <div class="callout__stack">
+                    <div class="stat">
+                        <p class="stat__value">+12 ans</p>
+                        <p class="stat__label">de maturite</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value">API stable</p>
+                        <p class="stat__label">et documentee</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value">Communaute</p>
+                        <p class="stat__label">active &amp; fiable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Projet jQuery 4.0 - Interface de presentation moderne.</p>
+            <a href="#top">Revenir en haut</a>
+        </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

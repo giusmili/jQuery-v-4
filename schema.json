@@ -1,0 +1,14 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Projet jQuery 4.0",
+    "description": "Interface de presentation moderne sur jQuery 4.0 et ses evolutions.",
+    "inLanguage": "fr-FR",
+    "about": {
+        "@type": "SoftwareApplication",
+        "name": "jQuery",
+        "applicationCategory": "DeveloperApplication",
+        "softwareVersion": "4.0",
+        "operatingSystem": "Any"
+    }
+}
