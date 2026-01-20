@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v3";
 const APP_SHELL_CACHE = `app-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `runtime-${CACHE_VERSION}`;
 const APP_SHELL = [
@@ -7,7 +7,6 @@ const APP_SHELL = [
     "./css/style.css",
     "./js/main.js",
     "./vendor/jquery/jquery.min.js",
-    "./schema.json",
     "./offline.html"
 ];
 
